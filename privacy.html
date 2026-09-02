@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -22,15 +22,15 @@ footer{margin-top:4rem;padding-top:1.5rem;border-top:1px solid var(--line);color
 <body>
 <main>
 <h1>Privacy Policy</h1>
-<p class="sub">Sanad · last updated 30 August 2026</p>
+<p class="sub">Sanad · version 1.1 · last updated 2 September 2026</p>
 
 <div class="box">
-<strong>The short version.</strong> Sanad has no accounts, no sign-in, no advertising and no
-active analytics. Your adhkar, streak, favourites and reminder times stay on your device.
-Apple and RevenueCat process the limited information needed to manage subscriptions. The
-TikTok App Events SDK is linked for a future advertising-attribution setup, but it has no
-valid credentials and is never initialized in this release. It sends no data while disabled.
-Details are below.
+<strong>The short version.</strong> Sanad has no accounts, no sign-in and no ads.
+Your adhkar, streak, favourites, reminders and practice history stay on your device.
+Subscriptions are handled by Apple and RevenueCat. TikTok advertising attribution is
+optional and remains off unless you confirm that you are 18 or older and then allow tracking
+in Apple's system prompt. TikTok never receives your adhkar or practice history. Details are
+below.
 </div>
 
 <h2>What stays on your device</h2>
@@ -64,16 +64,36 @@ a subscription management service. RevenueCat receives:</p>
 <p>RevenueCat processes this information to validate purchases, keep entitlements in sync,
 prevent fraud and provide subscription support. Sanad does not use it for advertising.</p>
 
-<h2>Advertising attribution</h2>
-<p>The app binary includes TikTok's App Events SDK so a future version can measure whether
-TikTok advertising leads to an install or a subscription. The app requires a complete set
-of valid TikTok Business configuration values before it can initialize that SDK. Those
-values are not configured in this release, so the SDK remains disabled. Sanad sends TikTok
-no app events, advertising identifier, practice data or purchase data while it is disabled.</p>
-<p>Before any attribution is activated, this policy and the App Store privacy disclosure will
-be updated. Where Apple's App Tracking Transparency permission is required, Sanad will ask
-first and a refusal will never restrict the app. Your adhkar text, favourites, streak,
-session progress and reminder times will never be shared with TikTok.</p>
+<h2>Optional TikTok advertising attribution</h2>
+<p>Version 1.1 includes TikTok's App Events SDK so we can measure whether an advertisement
+on TikTok led to an install or subscription. The SDK is not initialized and sends nothing
+unless you first confirm that you are 18 or older and then choose “Allow” in Apple's App
+Tracking Transparency prompt. Refusing either optional step does not restrict any feature
+of Sanad.</p>
+<p>If you allow tracking, TikTok may receive:</p>
+<ul>
+<li>Apple's advertising identifier and device identifiers used by the SDK;</li>
+<li>standard device and network information, including device model, operating-system
+    version, locale, user agent and IP address;</li>
+<li>limited SDK performance and diagnostic metadata used to maintain reliability and
+    prevent fraud;</li>
+<li>generic Install, Launch, day-two retention and onboarding-complete events;</li>
+<li>generic paywall-view and checkout events; and</li>
+<li>after a verified purchase only, the subscription product identifier, local price,
+    currency and transaction identifier.</li>
+</ul>
+<p>TikTok uses this information for advertising attribution, campaign measurement,
+analytics, audience creation and fraud prevention. Sanad disables TikTok's automatic event
+and StoreKit observers, Enhanced Data Postback, automatic screen/button collection and
+remote screenshot collection. Sanad does not use TikTok's identify API. We never send TikTok
+your optional name, any dhikr text, which set you use, progress, counts, streak, favourites,
+reminder times, email or phone number. Restored, failed, cancelled and pending purchases are
+not reported as purchases. TikTok may derive an approximate region from the network IP
+address; Sanad never asks iOS for location permission.</p>
+<p>You can change your permission at any time in iOS Settings → Privacy &amp; Security →
+Tracking. TikTok's own privacy information is available at
+<a href="https://www.tiktok.com/legal/page/eea/privacy-policy/en" rel="noopener">TikTok's
+Privacy Policy</a>.</p>
 
 <h2>Notifications</h2>
 <p>Reminders are local notifications scheduled by your own device. They are not push
@@ -81,33 +101,33 @@ notifications, nothing is sent from a server, and we do not know whether you ope
 
 <h2>What we do not do</h2>
 <ul>
-<li>No advertising is displayed in the app.</li>
-<li>No advertising attribution or analytics is active in this release.</li>
-<li>No advertising identifier is accessed or transmitted while TikTok attribution is disabled.</li>
-<li>Sanad does not sell personal information.</li>
-<li>Sanad does not create an account or advertising profile about you.</li>
+<li>No ads inside Sanad.</li>
+<li>No TikTok transmission before an 18-or-older confirmation and ATT permission.</li>
+<li>No sale of personal information.</li>
+<li>No account or sign-in.</li>
+<li>No location permission. Sanad never asks iOS for precise or approximate location.</li>
 </ul>
 
 <h2>Children</h2>
-<p>Sanad is not directed primarily to children. The app does not ask for a date of birth and
-Sanad does not knowingly collect personal information directly from children. Apple and
-RevenueCat may process subscription information when a purchase is made. The disabled
-TikTok attribution integration is not initialized for any user in this release.</p>
+<p>Sanad's remembrance features remain available regardless of age. TikTok attribution is
+separately restricted to people who affirm that they are 18 or older; otherwise the TikTok
+SDK is never initialized. If we learn that advertising data from a child was sent, we will
+stop processing it and work with TikTok to delete it.</p>
 
 <h2>Your rights</h2>
-<p>Sanad does not operate an account or practice-data database. Your adhkar activity can be
-removed by deleting the app. Apple controls your App Store purchase record. For a request
-concerning subscription data processed through RevenueCat, or for any privacy question,
-write to <a href="mailto:reskype.contact@gmail.com">reskype.contact@gmail.com</a>. We may
-need your anonymous app user identifier to locate a RevenueCat record and will respond
-within 30 days.</p>
+<p>Your practice data is on your phone and under your control: delete the app and it is gone.
+Apple controls your App Store purchase record. For the subscription record held by RevenueCat,
+advertising data processed by TikTok, or any privacy question, write to
+<a href="mailto:reskype.contact@gmail.com">reskype.contact@gmail.com</a> and we will respond
+within 30 days. We may need your anonymous app user identifier to locate a RevenueCat record.</p>
 
 <h2>Changes</h2>
 <p>If this policy changes, the date at the top changes with it, and any change that affects
 what leaves your device will be announced in the app before it takes effect.</p>
 
 <footer>
-Sanad — Mathieu Gaillac · <a href="terms.html">Terms of Use</a>
+Sanad — Mathieu Gaillac · <a href="terms.html">Terms of Use</a> ·
+<a href="mailto:reskype.contact@gmail.com">Support</a>
 </footer>
 </main>
 </body>
